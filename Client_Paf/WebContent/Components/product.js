@@ -70,7 +70,7 @@ $(document).on("click", ".btnRemove", function(event) {
 		{
 			url: "ProductsAPI",
 			type: "DELETE",
-			data: "pID =" + $(this).data("pid"),
+			data: "pID=" + $(this).data("pid"),
 			dataType: "text",
 			complete: function(response, status) {
 				onItemDeleteComplete(response.responseText, status);
